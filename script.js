@@ -24,14 +24,19 @@ function grid(n) {
 
 
     hoverDiv.forEach(element => {
+        let count = 0;
         element.addEventListener('mouseover', (e) => {
+            count += 0.1;
+            console.log(count)
             e.target.style.backgroundColor = 'pink';
+            e.target.style.opacity = count;
         });
     });
     ``
     hoverDiv.forEach(element => {
         element.addEventListener('mouseleave', (e) => {
             e.target.style.backgroundColor = '';
+            e.target.style.opacity = 1;
         });
     });
 }
