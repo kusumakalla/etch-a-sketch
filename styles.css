@@ -1,7 +1,6 @@
 div {
     height: 100px;
     width: 100px;
-    margin: 5px;
     border: solid 2px rgb(13, 13, 13);
 
 }
@@ -11,12 +10,14 @@ div {
     flex-direction: column;
     height: auto;
     width: auto;
-    justify-content: space-between;
+    justify-content: center;
+    border: none;
 }
 
 .containern {
     display: flex;
     height: auto;
     width: auto;
-    justify-content: space-between;
+    justify-content: center;
+    border: none;
 }

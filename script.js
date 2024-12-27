@@ -13,7 +13,6 @@ function grid(n) {
         for (let j = 1; j <= n; j++) {
             let div = document.createElement("div");
             div.classList.add("hoverDiv");
-            div.textContent = "div";
             containern.appendChild(div);
         }
         container.appendChild(containern);
@@ -36,7 +35,7 @@ function grid(n) {
     hoverDiv.forEach(element => {
         element.addEventListener('mouseleave', (e) => {
             e.target.style.backgroundColor = '';
-            e.target.style.opacity = 1;
+            e.target.style.opacity = '';
         });
     });
 }
